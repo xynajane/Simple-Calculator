@@ -1,0 +1,87 @@
+body {
+    background-color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #8E44AD;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    box-sizing: border-box;
+    border: 2px solid #4B0082;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #6C3483;
+    background-color: #ECF0F1;
+    color: #333;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #6C3483;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8E44AD;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+button.reset {
+    background-color: #6C3483;
+    margin-left: 10px;
+}
+
+button.reset:hover {
+    background-color: #8E44AD;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-container {
+        width: 90%;
+    }
+
+    label, #output {
+        font-size: 16px;
+    }
+
+    input[type="number"], button, button.reset {
+        padding: 10px;
+    }
+}
